@@ -1,0 +1,18 @@
+{
+	"김세연": {
+		"name": "김세연",
+		"department": "마케팅",
+		"location_transport": "영통역",
+		"location_car": "수원시 영통구 영통동 영통역",
+		"favorite": "IT",
+		"user_option": "1"
+	},
+	"chj": {
+		"name": "chj",
+		"department": "개발",
+		"location_transport": "인천논현역",
+		"location_car": "인천광역시 남동구 논현동 인천논현역",
+		"favorite": "세계",
+		"user_option": "2"
+	}
+}

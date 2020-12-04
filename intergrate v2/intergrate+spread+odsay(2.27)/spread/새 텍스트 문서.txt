@@ -1,0 +1,5 @@
+gspread ¼³Ä¡
+
+reference
+
+https://gspread.readthedocs.io/en/latest/user-guide.html#getting-a-cell-value

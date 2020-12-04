@@ -1,0 +1,14 @@
+{
+	"김세연": {
+		"name": "김세연",
+		"department": "마케팅",
+		"location": "영통역",
+		"favorite": "IT"
+	},
+	"chj": {
+		"name": "chj",
+		"department": "개발",
+		"location": "인천논현역",
+		"favorite": "세계"
+	}
+}
