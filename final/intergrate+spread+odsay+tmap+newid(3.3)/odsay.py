@@ -18,7 +18,7 @@ def req_direction():
     global resultdata
 
     URL_direction = 'https://api.odsay.com/v1/api/searchPubTransPathR'
-    params_direction = {'apiKey': 'EtTFZAyS+gZ+vjskaSisH3uAvML7lt9xnvEc8OoYNHU',
+    params_direction = {'apiKey': '',
               'lang': '0',
               'output': 'json',
               'SX': str(Departure_longitude),   # 출발 경도
@@ -55,7 +55,7 @@ def req_departureset(place):
     global Departure_latitude
 
     URL_departureset = 'https://api.odsay.com/v1/api/searchStation'
-    params_departureset = {'apiKey': 'EtTFZAyS+gZ+vjskaSisH3uAvML7lt9xnvEc8OoYNHU',
+    params_departureset = {'apiKey': '',
                           'lang': '0',
                           'output': 'json',
                           'stationName': place,  # 검색할 정류장 최소 2글자

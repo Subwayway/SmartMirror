@@ -28,14 +28,14 @@ def car_info_print(): # 필요값 출력 함수
 
     roadname_buff = ''
     sign_buff = 5
-    
+
     for i in range(0, j):                                    # 도로이름, 교통정보 출력을 위한 for문
         DriveList = path[i]["properties"]
         roadname = DriveList['name']                        # 도로이름 변수
-        trafficList = path[i]["geometry"]                   
+        trafficList = path[i]["geometry"]
 
-        if 'traffic' in trafficList and trafficList['traffic'] != []:  # traffic 딕셔너리 구분문 
-            tList = trafficList['traffic']                  # traffic 딕셔너리가 있는경우만 값을 가져옴   
+        if 'traffic' in trafficList and trafficList['traffic'] != []:  # traffic 딕셔너리 구분문
+            tList = trafficList['traffic']                  # traffic 딕셔너리가 있는경우만 값을 가져옴
             if tList[0][2] == 0:
                 sign = 0  # '정보없음'
             elif tList[0][2] == 1:
@@ -88,12 +88,12 @@ def car_info_load(start, depart):
 
     URL_a = 'https://apis.openapi.sk.com/tmap/geo/geocoding?version=1&city_do=' + str(start_lo_c) \
             + '&gu_gun=' + str(start_lo_g) + '&dong=' + str(start_lo_d) + '&detailAddress=' + str(start_lo_da) \
-            + '&coordType=WGS84GEO&appKey=l7xx4b80ff43a39140cca93263e35145e4e0'
+            + '&coordType=WGS84GEO&appKey='
     # 위도, 경도받아오는 url 1
 
     URL_b = 'https://apis.openapi.sk.com/tmap/geo/geocoding?version=1&city_do=' + str(depart_lo_c) \
             + '&gu_gun=' + str(depart_lo_g) + '&dong=' + str(depart_lo_d) + '&detailAddress=' + str(depart_lo_da) \
-            + '&coordType=WGS84GEO&appKey=l7xx4b80ff43a39140cca93263e35145e4e0'
+            + '&coordType=WGS84GEO&appKey='
     # 위도, 경도받아오는 url 2
 
     response_a = requests.get(URL_a)  # 위도, 경도를 json에서 가져오는 코드
@@ -114,7 +114,7 @@ def car_info_load(start, depart):
     startY = str(lat_a)
     detailPosFlag = '0'
     trafficInfo = 'Y'
-    key = "l7xx4b80ff43a39140cca93263e35145e4e0"
+    key = ""
 
     # 경로 url
     url = "https://apis.openapi.sk.com/tmap/routes?version=" + version \
